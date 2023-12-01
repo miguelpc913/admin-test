@@ -32,7 +32,12 @@ func Init(db *gorm.DB) *chi.Mux {
 		r.Post("/", sm.PostRecommendationRule)
 		r.Get("/{id}", sm.GetRecommendationRuleById)
 		r.Put("/orderPriority", sm.PutOrderRecommendationRules)
-		r.Put("/{id}/", sm.PutOrderRecommendationRules)
+		r.Put("/{id}/identity", sm.PutRecommendationRuleIdentity)
+		r.Put("/{id}/general", sm.PutRecommendationRuleGeneral)
+		r.Put("/{id}/validities", sm.PutRecommendationRuleValidities)
+		r.Put("/{id}/displays", sm.PutRecommendationDisplay)
+		r.Put("/{id}/salesGroups", sm.PutRecommendationSalesGroups)
+		r.Put("/{id}/buyerTypes", sm.PutRecommendationBuyerTypes)
 	})
 	return r
 }

@@ -68,15 +68,15 @@ type PutRecommendationGeneral struct {
 }
 
 type PutRecommendationValidities struct {
-	StartDatetime              string   `json:"startDatetime"`
-	EndDatetime                string   `json:"endDatetime"`
-	EventStartDatetime         string   `json:"eventStartDatetime"`
-	EventEndDatetime           string   `json:"eventEndDatetime"`
-	WeekDay                    []string `json:"weekDay"`
-	StartTime                  string   `json:"startTime"`
-	EndTime                    string   `json:"endTime"`
-	SessionOffsetMinutesBefore int      `json:"sessionOffsetMinutesBefore"`
-	SessionOffsetMinutesAfter  int      `json:"sessionOffsetMinutesAfter"`
+	StartDatetime              string `json:"startDatetime"`
+	EndDatetime                string `json:"endDatetime"`
+	EventStartDatetime         string `json:"eventStartDatetime"`
+	EventEndDatetime           string `json:"eventEndDatetime"`
+	WeekDay                    []int  `json:"weekDay"`
+	StartTime                  string `json:"startTime"`
+	EndTime                    string `json:"endTime"`
+	SessionOffsetMinutesBefore int    `json:"sessionOffsetMinutesBefore"`
+	SessionOffsetMinutesAfter  int    `json:"sessionOffsetMinutesAfter"`
 }
 
 type PutRecommendationDisplay struct {
